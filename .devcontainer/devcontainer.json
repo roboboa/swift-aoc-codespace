@@ -1,12 +1,15 @@
 {
   "name": "Swift Development Environment",
-  "image": "swift:5.9",
-  
+  "image": "swift:6.0",
   "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "username": "swift",
+      "userUid": "automatic",
+      "userGid": "automatic"
+    },
     "ghcr.io/devcontainers/features/git:1": {},
     "ghcr.io/devcontainers/features/github-cli:1": {}
   },
-
   "customizations": {
     "vscode": {
       "extensions": [
@@ -25,10 +28,6 @@
       }
     }
   },
-
   "postCreateCommand": "swift --version && git config --global core.editor 'code --wait'",
-  
-  "forwardPorts": [],
-  
-  "remoteUser": "root"
+  "remoteUser": "swift"
 }

@@ -13,7 +13,7 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "sswg.swift-lang",
+        "swiftlang.swift-vscode",
         "vadimcn.vscode-lldb",
         "ms-vscode.cmake-tools"
       ],

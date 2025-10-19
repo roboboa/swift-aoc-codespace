@@ -1,0 +1,13 @@
+{
+  "files.exclude": {
+    "**/.build": true,
+    "**/.swiftpm": true
+  },
+  "search.exclude": {
+    "**/.build": true
+  },
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true
+}

@@ -1,0 +1,30 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Debug AdventOfCode",
+      "program": "${workspaceFolder}/.build/debug/AdventOfCode",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "preLaunchTask": "swift-build"
+    },
+    {
+      "type": "lldb",
+      "request": "launch",
+      "name": "Test AdventOfCode",
+      "program": "./.build/debug/AdventOfCodePackageTests.xctest",
+      "preLaunchTask": "swift-test-build"
+    },
+    {
+      "type": "swift",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:swift-aoc-codespace}",
+      "name": "Release AdventOfCode",
+      "program": "${workspaceFolder:swift-aoc-codespace}/.build/release/AdventOfCode",
+      "preLaunchTask": "swift: Build Release AdventOfCode"
+    }
+  ]
+}

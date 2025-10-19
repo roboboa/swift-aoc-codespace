@@ -1,0 +1,31 @@
+# Swift Package Manager
+.build/
+Packages/
+*.xcodeproj
+*.xcworkspace
+xcuserdata/
+DerivedData/
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Build artifacts
+*.swiftmodule
+*.swiftdoc
+*.o
+*.a
+
+# Temporary files
+*.swp
+*.swo
+*~
+
+# Don't commit actual puzzle inputs (optional - you may want to keep them)
+# Inputs/*.txt

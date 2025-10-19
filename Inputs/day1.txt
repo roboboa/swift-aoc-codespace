@@ -1,0 +1,2 @@
+# Place your Advent of Code input here
+# Each day's puzzle will have its own input file

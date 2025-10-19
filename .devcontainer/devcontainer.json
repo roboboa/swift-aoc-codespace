@@ -1,0 +1,34 @@
+{
+  "name": "Swift Development Environment",
+  "image": "swift:5.9",
+  
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "sswg.swift-lang",
+        "vadimcn.vscode-lldb",
+        "ms-vscode.cmake-tools"
+      ],
+      "settings": {
+        "lldb.library": "/usr/lib/liblldb.so",
+        "swift.path": "/usr/bin/swift",
+        "swift.buildPath": "/usr/bin/swift-build",
+        "swift.runtimePath": "/usr/lib/swift",
+        "editor.formatOnSave": true,
+        "editor.tabSize": 2,
+        "files.trimTrailingWhitespace": true
+      }
+    }
+  },
+
+  "postCreateCommand": "swift --version && git config --global core.editor 'code --wait'",
+  
+  "forwardPorts": [],
+  
+  "remoteUser": "root"
+}

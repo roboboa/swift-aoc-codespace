@@ -1,6 +1,6 @@
 {
   "name": "Swift Development Environment",
-  "image": "swift:6.0",
+  "image": "swift:6.2",
   "features": {
     "ghcr.io/devcontainers/features/common-utils:2": {
       "username": "swift",

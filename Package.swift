@@ -1,33 +1,25 @@
-// swift-tools-version: 5.9
+// swift-tools-version: 6.2
 import PackageDescription
 
 let package = Package(
     name: "AdventOfCode",
-    platforms: [
-        .macOS(.v13)
-    ],
-    products: [
-        .executable(
-            name: "AdventOfCode",
-            targets: ["AdventOfCode"]
-        )
-    ],
+    platforms: [.macOS(.v15)],
     dependencies: [
-        // Add any dependencies here, for example:
-        // .package(url: "https://github.com/apple/swift-algorithms", from: "1.0.0"),
+        // Add Swift Testing dependency
+        .package(url: "https://github.com/apple/swift-testing.git", from: "6.2.0")
     ],
     targets: [
         .executableTarget(
             name: "AdventOfCode",
-            dependencies: [
-                // Reference dependencies here
-            ],
             path: "Sources"
         ),
         .testTarget(
             name: "AdventOfCodeTests",
-            dependencies: ["AdventOfCode"],
+            dependencies: [
+                "AdventOfCode",
+                .product(name: "Testing", package: "swift-testing"),
+            ],
             path: "Tests"
-        )
+        ),
     ]
 )

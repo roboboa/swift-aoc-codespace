@@ -10,7 +10,7 @@ This project is configured to run in GitHub Codespaces with a complete Swift dev
 
 1. Push this repository to GitHub
 2. Click on "Code" → "Codespaces" → "Create codespace on main"
-3. Wait for the environment to build (Swift 5.9 will be installed automatically)
+3. Wait for the environment to build (Swift 6.2 will be installed automatically)
 4. Start coding!
 
 ### Project Structure
@@ -77,7 +77,7 @@ The project includes LLDB debugging configuration:
 
 ## Extensions Included
 
-- **Swift Language Support** (`sswg.swift-lang`) - Syntax highlighting, code completion
+- **Swift Language Support** (`swiftlang.swift-vscode`) - Syntax highlighting, code completion
 - **CodeLLDB** (`vadimcn.vscode-lldb`) - Debugging support for Swift
 - **CMake Tools** (`ms-vscode.cmake-tools`) - Build system support
 

@@ -20,9 +20,6 @@
       ],
       "settings": {
         "lldb.library": "/usr/lib/liblldb.so",
-        "swift.path": "/usr/bin/swift",
-        "swift.buildPath": "/usr/bin/swift-build",
-        "swift.runtimePath": "/usr/lib/swift",
         "swiftlint.path": "${workspaceFolder}/.build/release/swiftlint",
         "editor.formatOnSave": true,
         "editor.tabSize": 2,

@@ -8,10 +8,7 @@
       "userGid": "automatic"
     },
     "ghcr.io/devcontainers/features/git:1": {},
-    "ghcr.io/devcontainers/features/github-cli:1": {},
-    "ghcr.io/meaningful-ooo/devcontainer-features/homebrew:2": {
-      "shallow": true
-    }
+    "ghcr.io/devcontainers/features/github-cli:1": {}
   },
   "customizations": {
     "vscode": {
@@ -32,6 +29,6 @@
       }
     }
   },
-  "postCreateCommand": "brew install swiftlint && swiftlint version && git config --global core.editor 'code --wait'",
+  "postCreateCommand": "git config --global core.editor 'code --wait'",
   "remoteUser": "swift"
 }

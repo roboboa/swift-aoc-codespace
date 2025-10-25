@@ -5,8 +5,8 @@ let package = Package(
     name: "AdventOfCode",
     platforms: [.macOS(.v15)],
     dependencies: [
-        // Add Swift Testing dependency
-        .package(url: "https://github.com/apple/swift-testing.git", from: "6.2.0")
+        .package(url: "https://github.com/apple/swift-testing.git", from: "6.2.0"),
+        .package(url: "https://github.com/realm/SwiftLint.git", from: "0.61.0")
     ],
     targets: [
         .executableTarget(

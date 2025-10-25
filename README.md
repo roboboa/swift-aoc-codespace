@@ -29,6 +29,7 @@ This project is configured to run in GitHub Codespaces with a complete Swift dev
 │   └── Day1Tests.swift     # Example test template
 ├── Inputs/                 # Puzzle inputs
 │   └── day1.txt            # Place your puzzle inputs here
+├── .swiftlint.yml          # SwiftLint configuration
 └── Package.swift           # Swift Package Manager configuration
 ```
 
@@ -47,6 +48,20 @@ This project is configured to run in GitHub Codespaces with a complete Swift dev
 - **Test**: `swift test` or Cmd+Shift+T
 - **Debug**: Press F5 or use Run → Start Debugging
 - **Clean**: `swift package clean`
+- **Lint**: SwiftLint runs automatically with the VS Code extension
+
+### Code Quality with SwiftLint
+
+This project includes SwiftLint for maintaining code quality and consistency:
+
+- **Automatic linting**: The SwiftLint VS Code extension provides real-time feedback
+- **Configuration**: Customize rules in [.swiftlint.yml](.swiftlint.yml)
+- **AoC-friendly settings**:
+  - Single-character variable names allowed (`i`, `j`, `k`, `x`, `y`, `z`)
+  - Reasonable line and function length limits
+  - Format-on-save enabled
+
+The configuration is optimized for Advent of Code challenges while maintaining good code practices.
 
 ### Adding Dependencies
 
@@ -74,11 +89,13 @@ The project includes LLDB debugging configuration:
 - Use the `Inputs/` directory for puzzle inputs
 - Write tests for the example inputs first
 - Use Swift's powerful features: pattern matching, optionals, collections
+- SwiftLint helps catch common mistakes and maintain clean code
 
 ## Extensions Included
 
 - **Swift Language Support** (`swiftlang.swift-vscode`) - Syntax highlighting, code completion
 - **CodeLLDB** (`vadimcn.vscode-lldb`) - Debugging support for Swift
 - **CMake Tools** (`ms-vscode.cmake-tools`) - Build system support
+- **SwiftLint** (`vknabel.vscode-swiftlint`) - Code linting and style enforcement
 
 Happy coding! 🚀

@@ -23,12 +23,13 @@
         "swift.path": "/usr/bin/swift",
         "swift.buildPath": "/usr/bin/swift-build",
         "swift.runtimePath": "/usr/lib/swift",
+        "swiftlint.path": "${workspaceFolder}/.build/release/swiftlint",
         "editor.formatOnSave": true,
         "editor.tabSize": 2,
         "files.trimTrailingWhitespace": true
       }
     }
   },
-  "postCreateCommand": "git config --global core.editor 'code --wait'",
+  "postCreateCommand": "git config --global core.editor 'code --wait' && code --disable-extension vknabel.vscode-swiftlint",
   "remoteUser": "swift"
 }
